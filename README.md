@@ -1,4 +1,4 @@
-# Newt Serif
+# Solveig
 
 Made by Looseleaf Fonts. This is now open source, but I haven't done any research on what license I want to use, so that's not here.
 
