@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="brokenbar" format="1">
+  <advance width="243"/>
+  <unicode hex="00A6"/>
+  <outline>
+    <contour>
+      <point x="143" y="603" type="curve"/>
+      <point x="140" y="494"/>
+      <point x="141" y="404"/>
+      <point x="142" y="295" type="curve"/>
+      <point x="131" y="293"/>
+      <point x="112" y="294"/>
+      <point x="101" y="295" type="curve"/>
+      <point x="102" y="404"/>
+      <point x="103" y="494"/>
+      <point x="102" y="603" type="curve"/>
+      <point x="111" y="604"/>
+      <point x="137" y="603"/>
+    </contour>
+    <contour>
+      <point x="142" y="229" type="curve"/>
+      <point x="139" y="120"/>
+      <point x="140" y="24"/>
+      <point x="141" y="-85" type="curve"/>
+      <point x="130" y="-87"/>
+      <point x="112" y="-91"/>
+      <point x="100" y="-90" type="curve"/>
+      <point x="102" y="19"/>
+      <point x="102" y="120"/>
+      <point x="102" y="228" type="curve"/>
+      <point x="110" y="230"/>
+      <point x="136" y="230"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.fontlab.hintData</key>
+      <dict>
+	<key>vhints</key>
+	<array>
+	  <dict>
+	    <key>position</key>
+	    <integer>100</integer>
+	    <key>width</key>
+	    <integer>41</integer>
+	  </dict>
+	</array>
+      </dict>
+    </dict>
+  </lib>
+</glyph>

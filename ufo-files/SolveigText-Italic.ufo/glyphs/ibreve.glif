@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="ibreve" format="1">
+  <advance width="176"/>
+  <unicode hex="012D"/>
+  <outline>
+    <contour>
+      <point x="9" y="0" type="curve"/>
+      <point x="42" y="93"/>
+      <point x="82" y="308"/>
+      <point x="86" y="385" type="curve"/>
+      <point x="110" y="382"/>
+      <point x="139" y="381"/>
+      <point x="167" y="387" type="curve"/>
+      <point x="137" y="321"/>
+      <point x="96" y="62"/>
+      <point x="99" y="-2" type="curve"/>
+      <point x="75" y="6"/>
+      <point x="22" y="1"/>
+    </contour>
+    <contour>
+      <point x="247" y="556" type="curve"/>
+      <point x="253" y="554"/>
+      <point x="265" y="551"/>
+      <point x="271" y="546" type="curve"/>
+      <point x="243" y="479"/>
+      <point x="187" y="443"/>
+      <point x="139" y="443" type="curve" smooth="yes"/>
+      <point x="89" y="443"/>
+      <point x="58" y="490"/>
+      <point x="56" y="548" type="curve"/>
+      <point x="63" y="553"/>
+      <point x="76" y="555"/>
+      <point x="81" y="556" type="curve"/>
+      <point x="93" y="525"/>
+      <point x="113" y="502"/>
+      <point x="152" y="502" type="curve" smooth="yes"/>
+      <point x="189" y="502"/>
+      <point x="222" y="521"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.fontlab.hintData</key>
+      <dict>
+	<key>hhints</key>
+	<array>
+	  <dict>
+	    <key>position</key>	    <integer>-2</integer>
+	    <key>width</key>	    <integer>21</integer>
+	  </dict>
+	  <dict>
+	    <key>position</key>	    <integer>443</integer>
+	    <key>width</key>	    <integer>59</integer>
+	  </dict>
+	  <dict>
+	    <key>position</key>	    <integer>536</integer>
+	    <key>width</key>	    <integer>20</integer>
+	  </dict>
+	</array>
+      </dict>
+    </dict>
+  </lib>
+</glyph>

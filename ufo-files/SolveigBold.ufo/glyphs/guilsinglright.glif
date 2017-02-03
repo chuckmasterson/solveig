@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="guilsinglright" format="1">
+  <advance width="220"/>
+  <unicode hex="203A"/>
+  <outline>
+    <contour>
+      <point x="44" y="340" type="curve"/>
+      <point x="48" y="345"/>
+      <point x="72" y="354"/>
+      <point x="85" y="355" type="curve"/>
+      <point x="108" y="311"/>
+      <point x="144" y="258"/>
+      <point x="187" y="203" type="curve"/>
+      <point x="154" y="161"/>
+      <point x="106" y="92"/>
+      <point x="81" y="47" type="curve"/>
+      <point x="73" y="47"/>
+      <point x="46" y="55"/>
+      <point x="40" y="62" type="curve"/>
+      <point x="61" y="114"/>
+      <point x="74" y="158"/>
+      <point x="86" y="202" type="curve"/>
+      <point x="76" y="245"/>
+      <point x="66" y="285"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.fontlab.hintData</key>
+      <dict>
+	<key>hhints</key>
+	<array>
+	  <dict>
+	    <key>position</key>	    <integer>47</integer>
+	    <key>width</key>	    <integer>20</integer>
+	  </dict>
+	  <dict>
+	    <key>position</key>	    <integer>346</integer>
+	    <key>width</key>	    <integer>21</integer>
+	  </dict>
+	</array>
+      </dict>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="greater" format="1">
+  <advance width="388"/>
+  <unicode hex="003E"/>
+  <outline>
+    <contour>
+      <point x="345" y="189" type="curve"/>
+      <point x="248" y="138"/>
+      <point x="117" y="64"/>
+      <point x="77" y="39" type="curve"/>
+      <point x="68" y="47"/>
+      <point x="65" y="58"/>
+      <point x="62" y="68" type="curve"/>
+      <point x="117" y="99"/>
+      <point x="236" y="164"/>
+      <point x="291" y="196" type="curve"/>
+      <point x="233" y="231"/>
+      <point x="122" y="299"/>
+      <point x="62" y="334" type="curve"/>
+      <point x="66" y="344"/>
+      <point x="73" y="355"/>
+      <point x="85" y="362" type="curve"/>
+      <point x="139" y="327"/>
+      <point x="254" y="256"/>
+      <point x="345" y="205" type="curve"/>
+      <point x="347" y="200"/>
+      <point x="347" y="194"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.fontlab.hintData</key>
+      <dict>
+	<key>hhints</key>
+	<array>
+	  <dict>
+	    <key>position</key>	    <integer>39</integer>
+	    <key>width</key>	    <integer>21</integer>
+	  </dict>
+	  <dict>
+	    <key>position</key>	    <integer>342</integer>
+	    <key>width</key>	    <integer>20</integer>
+	  </dict>
+	</array>
+      </dict>
+    </dict>
+  </lib>
+</glyph>

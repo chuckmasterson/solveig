@@ -1,0 +1,654 @@
+
+# GSUB 
+
+
+lookup loclLocalizedFormsinLatinlookup {
+  lookupflag 0;
+    sub \Scedilla by \Scommaaccent ;
+    sub \scedilla by \scommaaccent ;
+    sub \uni0162 by \uni021A ;
+    sub \uni0163 by \uni021B ;
+} loclLocalizedFormsinLatinlookup;
+
+lookup ligaStandardLigaturesinLatinloo {
+  lookupflag 0;
+    sub \f \i  by \fi;
+    sub \f \l  by \fl;
+} ligaStandardLigaturesinLatinloo;
+
+feature locl {
+
+  script latn;
+     language MOL  exclude_dflt;
+      lookup loclLocalizedFormsinLatinlookup;
+     language ROM  exclude_dflt;
+      lookup loclLocalizedFormsinLatinlookup;
+} locl;
+
+feature liga {
+
+  script latn;
+     language dflt ;
+      lookup ligaStandardLigaturesinLatinloo;
+} liga;
+
+# GPOS 
+
+
+lookup kernHorizontalKerninginLatinloo {
+  lookupflag 0;
+    pos \quotedbl \AE -100;
+    pos \quotedbl \M -71;
+    pos \quotesingle \AE -100;
+    pos \quotesingle \M -71;
+    pos \F \AE -133;
+    pos \F \M -71;
+    pos \O \AE -37;
+    pos \O \X -45;
+    pos \O \M -25;
+    pos \P \AE -149;
+    pos \P \M -67;
+    pos \Q \AE -37;
+    pos \Q \X -45;
+    pos \Q \M -25;
+    pos \T \AE -116;
+    pos \T \x -109;
+    pos \T \M -93;
+    pos \U \AE -47;
+    pos \U \x -18;
+    pos \U \M -27;
+    pos \V \AE -141;
+    pos \V \M -87;
+    pos \W \AE -141;
+    pos \W \M -87;
+    pos \Y \AE -120;
+    pos \Y \M -79;
+    pos \b \x -25;
+    pos \f \parenright 22;
+    pos \g \j 51;
+    pos \o \x -27;
+    pos \p \x -25;
+    pos \Ograve \AE -37;
+    pos \Ograve \X -45;
+    pos \Ograve \M -25;
+    pos \Oacute \AE -37;
+    pos \Oacute \X -45;
+    pos \Oacute \M -25;
+    pos \Ocircumflex \AE -37;
+    pos \Ocircumflex \X -45;
+    pos \Ocircumflex \M -25;
+    pos \Otilde \AE -37;
+    pos \Otilde \X -45;
+    pos \Otilde \M -25;
+    pos \Odieresis \AE -37;
+    pos \Odieresis \X -45;
+    pos \Odieresis \M -25;
+    pos \Oslash \AE -37;
+    pos \Oslash \X -45;
+    pos \Oslash \M -25;
+    pos \Ugrave \AE -47;
+    pos \Ugrave \x -18;
+    pos \Ugrave \M -27;
+    pos \Uacute \AE -47;
+    pos \Uacute \x -18;
+    pos \Uacute \M -27;
+    pos \Ucircumflex \AE -47;
+    pos \Ucircumflex \x -18;
+    pos \Ucircumflex \M -27;
+    pos \Udieresis \AE -47;
+    pos \Udieresis \x -18;
+    pos \Udieresis \M -27;
+    pos \Yacute \AE -120;
+    pos \Yacute \M -79;
+    pos \ograve \x -27;
+    pos \oacute \x -27;
+    pos \ocircumflex \x -27;
+    pos \otilde \x -27;
+    pos \odieresis \x -27;
+    pos \oslash \x -27;
+    pos \thorn \x -25;
+    pos \dcaron \f 33;
+    pos \gcircumflex \j 51;
+    pos \gbreve \j 51;
+    pos \gdotaccent \j 51;
+    pos \gcommaaccent \j 51;
+    pos \lcaron \f 33;
+    pos \Omacron \AE -37;
+    pos \Omacron \X -45;
+    pos \Omacron \M -25;
+    pos \omacron \x -27;
+    pos \Obreve \AE -37;
+    pos \Obreve \X -45;
+    pos \Obreve \M -25;
+    pos \obreve \x -27;
+    pos \Ohungarumlaut \AE -37;
+    pos \Ohungarumlaut \X -45;
+    pos \Ohungarumlaut \M -25;
+    pos \ohungarumlaut \x -27;
+    pos \uni0162 \AE -116;
+    pos \uni0162 \x -109;
+    pos \uni0162 \M -93;
+    pos \Tcaron \AE -116;
+    pos \Tcaron \x -109;
+    pos \Tcaron \M -93;
+    pos \Tbar \AE -116;
+    pos \Utilde \AE -47;
+    pos \Utilde \x -18;
+    pos \Utilde \M -27;
+    pos \Umacron \AE -47;
+    pos \Umacron \x -18;
+    pos \Umacron \M -27;
+    pos \Ubreve \AE -47;
+    pos \Ubreve \x -18;
+    pos \Ubreve \M -27;
+    pos \Uring \AE -47;
+    pos \Uring \x -18;
+    pos \Uring \M -27;
+    pos \Uhungarumlaut \AE -47;
+    pos \Uhungarumlaut \x -18;
+    pos \Uhungarumlaut \M -27;
+    pos \Uogonek \AE -47;
+    pos \Uogonek \x -18;
+    pos \Uogonek \M -27;
+    pos \Wcircumflex \AE -141;
+    pos \Wcircumflex \M -87;
+    pos \Ycircumflex \AE -120;
+    pos \Ycircumflex \M -79;
+    pos \Ydieresis \AE -120;
+    pos \Ydieresis \M -79;
+    pos \longs \parenright 22;
+    pos \uni021A \AE -116;
+    pos \uni021A \x -109;
+    pos \uni021A \M -93;
+    pos \quoteleft \AE -100;
+    pos \quoteleft \M -71;
+    pos \quoteright \AE -100;
+    pos \quoteright \M -71;
+    pos \quotedblleft \AE -100;
+    pos \quotedblleft \M -71;
+  subtable;
+    pos \C \ycircumflex -25;
+    pos \C \wcircumflex -25;
+    pos \C \ydieresis -25;
+    pos \C \yacute -25;
+    pos \C \y -25;
+    pos \C \w -25;
+    pos \C \v -25;
+    pos \F \scommaaccent -29;
+    pos \F \uogonek -21;
+    pos \F \scedilla -29;
+    pos \F \rcommaaccent -21;
+    pos \F \oe -50;
+    pos \F \eng -21;
+    pos \F \ncommaaccent -21;
+    pos \F \dotlessi -21;
+    pos \F \eogonek -50;
+    pos \F \dcaron -50;
+    pos \F \aogonek -50;
+    pos \F \Aogonek -75;
+    pos \F \Abreve -75;
+    pos \F \Amacron -75;
+    pos \F \oslash -50;
+    pos \F \ccedilla -50;
+    pos \F \Aring -75;
+    pos \F \Adieresis -75;
+    pos \F \Atilde -75;
+    pos \F \Acircumflex -75;
+    pos \F \Aacute -75;
+    pos \F \Agrave -75;
+    pos \F \u -21;
+    pos \F \s -29;
+    pos \F \r -21;
+    pos \F \q -50;
+    pos \F \p -21;
+    pos \F \o -50;
+    pos \F \n -21;
+    pos \F \m -21;
+    pos \F \e -50;
+    pos \F \d -50;
+    pos \F \c -50;
+    pos \F \a -50;
+    pos \F \A -75;
+    pos \F \period -67;
+    pos \F \comma -67;
+    pos \M \quotedblright -32;
+    pos \M \quotedblleft -32;
+    pos \M \quoteright -32;
+    pos \M \quoteleft -32;
+    pos \M \uni021A -52;
+    pos \M \Ydieresis -56;
+    pos \M \ycircumflex -22;
+    pos \M \Ycircumflex -56;
+    pos \M \wcircumflex -22;
+    pos \M \Wcircumflex -56;
+    pos \M \Uogonek -18;
+    pos \M \Uhungarumlaut -18;
+    pos \M \Uring -18;
+    pos \M \Ubreve -18;
+    pos \M \Umacron -18;
+    pos \M \Utilde -18;
+    pos \M \Tbar -52;
+    pos \M \Tcaron -52;
+    pos \M \uni0162 -52;
+    pos \M \ydieresis -22;
+    pos \M \yacute -22;
+    pos \M \Yacute -56;
+    pos \M \Udieresis -18;
+    pos \M \Ucircumflex -18;
+    pos \M \Uacute -18;
+    pos \M \Ugrave -18;
+    pos \M \y -22;
+    pos \M \w -22;
+    pos \M \v -22;
+    pos \M \Y -56;
+    pos \M \W -56;
+    pos \M \V -56;
+    pos \M \U -18;
+    pos \M \T -52;
+    pos \M \quotesingle -32;
+    pos \M \quotedbl -32;
+    pos \P \scommaaccent -32;
+    pos \P \uogonek -19;
+    pos \P \scedilla -32;
+    pos \P \rcommaaccent -19;
+    pos \P \oe -61;
+    pos \P \eng -19;
+    pos \P \ncommaaccent -19;
+    pos \P \dotlessi -19;
+    pos \P \gcommaaccent -49;
+    pos \P \gdotaccent -49;
+    pos \P \gbreve -49;
+    pos \P \gcircumflex -49;
+    pos \P \eogonek -61;
+    pos \P \dcaron -61;
+    pos \P \aogonek -42;
+    pos \P \oslash -61;
+    pos \P \ccedilla -61;
+    pos \P \u -19;
+    pos \P \s -32;
+    pos \P \r -19;
+    pos \P \q -61;
+    pos \P \p -19;
+    pos \P \o -61;
+    pos \P \n -19;
+    pos \P \m -19;
+    pos \P \g -49;
+    pos \P \e -61;
+    pos \P \d -61;
+    pos \P \c -61;
+    pos \P \a -42;
+    pos \P \period -122;
+    pos \P \comma -122;
+    pos \X \quotedblright -32;
+    pos \X \quotedblleft -32;
+    pos \X \quoteright -32;
+    pos \X \quoteleft -32;
+    pos \X \Ydieresis -14;
+    pos \X \ycircumflex -61;
+    pos \X \Ycircumflex -14;
+    pos \X \wcircumflex -61;
+    pos \X \oe -16;
+    pos \X \OE -45;
+    pos \X \ohungarumlaut -16;
+    pos \X \Ohungarumlaut -45;
+    pos \X \Obreve -45;
+    pos \X \Omacron -45;
+    pos \X \Gcommaaccent -45;
+    pos \X \Gdotaccent -45;
+    pos \X \Gbreve -45;
+    pos \X \Gcircumflex -45;
+    pos \X \eogonek -16;
+    pos \X \edotaccent -16;
+    pos \X \ebreve -16;
+    pos \X \emacron -16;
+    pos \X \dcaron -16;
+    pos \X \ccaron -16;
+    pos \X \Ccaron -45;
+    pos \X \cdotaccent -16;
+    pos \X \Cdotaccent -45;
+    pos \X \ccircumflex -16;
+    pos \X \Ccircumflex -45;
+    pos \X \cacute -16;
+    pos \X \Cacute -45;
+    pos \X \ydieresis -61;
+    pos \X \yacute -61;
+    pos \X \oslash -16;
+    pos \X \odieresis -16;
+    pos \X \otilde -16;
+    pos \X \ocircumflex -16;
+    pos \X \oacute -16;
+    pos \X \ograve -16;
+    pos \X \edieresis -16;
+    pos \X \ecircumflex -16;
+    pos \X \eacute -16;
+    pos \X \egrave -16;
+    pos \X \ccedilla -16;
+    pos \X \Yacute -14;
+    pos \X \Oslash -45;
+    pos \X \Odieresis -45;
+    pos \X \Otilde -45;
+    pos \X \Ocircumflex -45;
+    pos \X \Oacute -45;
+    pos \X \Ograve -45;
+    pos \X \y -61;
+    pos \X \w -61;
+    pos \X \v -61;
+    pos \X \q -16;
+    pos \X \o -16;
+    pos \X \e -16;
+    pos \X \d -16;
+    pos \X \c -16;
+    pos \X \Y -14;
+    pos \X \Q -45;
+    pos \X \O -45;
+    pos \X \G -45;
+    pos \X \C -45;
+    pos \X \quotesingle -32;
+    pos \X \quotedbl -32;
+    pos \x \oe -19;
+    pos \x \eogonek -19;
+    pos \x \dcaron -19;
+    pos \x \oslash -19;
+    pos \x \ccedilla -19;
+    pos \x \q -19;
+    pos \x \o -19;
+    pos \x \e -19;
+    pos \x \d -19;
+    pos \x \c -19;
+    pos \Tbar \uogonek -67;
+    pos \Tbar \uhungarumlaut -67;
+    pos \Tbar \uring -67;
+    pos \Tbar \ubreve -67;
+    pos \Tbar \umacron -67;
+    pos \Tbar \utilde -67;
+    pos \Tbar \rcommaaccent -67;
+    pos \Tbar \oe -67;
+    pos \Tbar \ohungarumlaut -60;
+    pos \Tbar \eng -67;
+    pos \Tbar \ncaron -67;
+    pos \Tbar \ncommaaccent -67;
+    pos \Tbar \nacute -67;
+    pos \Tbar \dotlessi -67;
+    pos \Tbar \eogonek -67;
+    pos \Tbar \edotaccent -60;
+    pos \Tbar \ebreve -60;
+    pos \Tbar \emacron -60;
+    pos \Tbar \dcaron -67;
+    pos \Tbar \ccaron -60;
+    pos \Tbar \cdotaccent -60;
+    pos \Tbar \ccircumflex -60;
+    pos \Tbar \cacute -60;
+    pos \Tbar \aogonek -71;
+    pos \Tbar \Aogonek -78;
+    pos \Tbar \abreve -47;
+    pos \Tbar \Abreve -78;
+    pos \Tbar \amacron -47;
+    pos \Tbar \Amacron -78;
+    pos \Tbar \udieresis -67;
+    pos \Tbar \ucircumflex -67;
+    pos \Tbar \uacute -67;
+    pos \Tbar \ugrave -67;
+    pos \Tbar \oslash -67;
+    pos \Tbar \odieresis -60;
+    pos \Tbar \otilde -60;
+    pos \Tbar \ocircumflex -60;
+    pos \Tbar \oacute -60;
+    pos \Tbar \ograve -60;
+    pos \Tbar \ntilde -67;
+    pos \Tbar \edieresis -60;
+    pos \Tbar \ecircumflex -60;
+    pos \Tbar \eacute -60;
+    pos \Tbar \egrave -60;
+    pos \Tbar \ccedilla -67;
+    pos \Tbar \aring -47;
+    pos \Tbar \adieresis -47;
+    pos \Tbar \atilde -47;
+    pos \Tbar \acircumflex -47;
+    pos \Tbar \aacute -47;
+    pos \Tbar \agrave -47;
+    pos \Tbar \Aring -78;
+    pos \Tbar \Adieresis -78;
+    pos \Tbar \Atilde -78;
+    pos \Tbar \Acircumflex -78;
+    pos \Tbar \Aacute -78;
+    pos \Tbar \Agrave -78;
+    pos \Tbar \u -67;
+    pos \Tbar \r -67;
+    pos \Tbar \q -67;
+    pos \Tbar \p -67;
+    pos \Tbar \o -67;
+    pos \Tbar \n -67;
+    pos \Tbar \m -67;
+    pos \Tbar \e -67;
+    pos \Tbar \d -67;
+    pos \Tbar \c -67;
+    pos \Tbar \a -71;
+    pos \Tbar \A -78;
+    pos \Tbar \period -89;
+    pos \Tbar \comma -89;
+  subtable;
+    @kc4_first_0 = [\A \Agrave \Aacute \Acircumflex \Atilde \Adieresis \Aring \Amacron \Abreve 
+	\Aogonek ];
+    @kc4_first_1 = [\D \Eth \Dcaron \Dcroat ];
+    @kc4_first_2 = [\E \Egrave \Eacute \Ecircumflex \Edieresis \Emacron \Ebreve \Edotaccent \Eogonek 
+	\Ecaron ];
+    @kc4_first_3 = [\K \Kcommaaccent ];
+    @kc4_first_4 = [\L \Lacute \Lcommaaccent \Lslash ];
+    @kc4_first_5 = [\O \Q \Ograve \Oacute \Ocircumflex \Otilde \Odieresis \Oslash \Omacron \Obreve 
+	\Ohungarumlaut ];
+    @kc4_first_6 = [\R \Racute \Rcommaaccent \Rcaron ];
+    @kc4_first_7 = [\T \uni0162 \Tcaron \uni021A ];
+    @kc4_first_8 = [\U \Ugrave \Uacute \Ucircumflex \Udieresis \Utilde \Umacron \Ubreve \Uring 
+	\Uhungarumlaut \Uogonek ];
+    @kc4_first_9 = [\V \W \Wcircumflex ];
+    @kc4_first_10 = [\Y \Yacute \Ycircumflex \Ydieresis ];
+    @kc4_first_11 = [\b \p \thorn ];
+    @kc4_first_12 = [\c \e \ccedilla \egrave \eacute \ecircumflex \edieresis \cacute \ccircumflex 
+	\cdotaccent \ccaron \emacron \ebreve \edotaccent \eogonek \ecaron ];
+    @kc4_first_13 = [\f \longs ];
+    @kc4_first_14 = [\g \gcircumflex \gbreve \gdotaccent \gcommaaccent ];
+    @kc4_first_15 = [\h \m \n \ntilde \hcircumflex \hbar \nacute \ncommaaccent \ncaron ];
+    @kc4_first_16 = [\k \kcommaaccent \kgreenlandic ];
+    @kc4_first_17 = [\dcaron \lcaron ];
+    @kc4_first_18 = [\o \ograve \oacute \ocircumflex \otilde \odieresis \oslash \omacron \obreve 
+	\ohungarumlaut ];
+    @kc4_first_19 = [\quotedbl \quotesingle \quoteleft \quoteright \quotedblleft ];
+    @kc4_first_20 = [\quotesinglbase \quotedblbase ];
+    @kc4_first_21 = [\r \racute \rcommaaccent \rcaron ];
+    @kc4_first_22 = [\s \sacute \scircumflex \scedilla \scaron \scommaaccent ];
+    @kc4_first_23 = [\v \w \y \yacute \ydieresis \wcircumflex \ycircumflex ];
+    @kc4_second_1 = [\T \uni0162 \Tcaron \Tbar \uni021A ];
+    @kc4_second_2 = [\U \Ugrave \Uacute \Ucircumflex \Udieresis \Utilde \Umacron \Ubreve \Uring 
+	\Uhungarumlaut \Uogonek ];
+    @kc4_second_3 = [\V \W \Wcircumflex ];
+    @kc4_second_4 = [\Y \Yacute \Ycircumflex \Ydieresis ];
+    @kc4_second_5 = [\v \w \y \yacute \ydieresis \wcircumflex \ycircumflex ];
+    @kc4_second_6 = [\quotedbl \quotesingle \quoteleft \quoteright \quotedblleft \quotedblright ];
+    @kc4_second_7 = [\a \aogonek ];
+    @kc4_second_8 = [\agrave \aacute \acircumflex \atilde \adieresis \aring \amacron \abreve ];
+    @kc4_second_9 = [\A \Agrave \Aacute \Acircumflex \Atilde \Adieresis \Aring \Amacron \Abreve 
+	\Aogonek ];
+    @kc4_second_10 = [\C \G \O \Q \Ograve \Oacute \Ocircumflex \Otilde \Odieresis \Oslash \Cacute 
+	\Ccircumflex \Cdotaccent \Ccaron \Gcircumflex \Gbreve \Gdotaccent 
+	\Gcommaaccent \Omacron \Obreve \Ohungarumlaut \OE ];
+    @kc4_second_11 = [\m \n \p \r \u \dotlessi \ncommaaccent \eng \rcommaaccent \uogonek ];
+    @kc4_second_12 = [\c \d \e \o \q \ccedilla \oslash \dcaron \eogonek \oe ];
+    @kc4_second_13 = [\s \scedilla \scommaaccent ];
+    @kc4_second_14 = [\z \zacute \zdotaccent \zcaron ];
+    @kc4_second_15 = [\comma \period ];
+    @kc4_second_16 = [\egrave \eacute \ecircumflex \edieresis \ograve \oacute \ocircumflex \otilde 
+	\odieresis \cacute \ccircumflex \cdotaccent \ccaron \emacron \ebreve 
+	\edotaccent \ohungarumlaut ];
+    @kc4_second_17 = [\ntilde \ugrave \uacute \ucircumflex \udieresis \nacute \ncaron \utilde \umacron 
+	\ubreve \uring \uhungarumlaut ];
+    @kc4_second_18 = [\g \gcircumflex \gbreve \gdotaccent \gcommaaccent ];
+    @kc4_second_19 = [\b \f \h \k \l ];
+    @kc4_second_20 = [\sacute \scircumflex \scaron ];
+    pos @kc4_first_0 @kc4_second_1 -78;
+    pos @kc4_first_0 @kc4_second_2 -18;
+    pos @kc4_first_0 @kc4_second_3 -96;
+    pos @kc4_first_0 @kc4_second_4 -78;
+    pos @kc4_first_0 @kc4_second_5 -45;
+    pos @kc4_first_0 @kc4_second_6 -58;
+    pos @kc4_first_1 @kc4_second_7 -15;
+    pos @kc4_first_1 @kc4_second_8 -15;
+    pos @kc4_first_1 @kc4_second_9 -49;
+    pos @kc4_first_2 @kc4_second_5 -21;
+    pos @kc4_first_3 @kc4_second_2 -15;
+    pos @kc4_first_3 @kc4_second_4 -27;
+    pos @kc4_first_3 @kc4_second_5 -62;
+    pos @kc4_first_3 @kc4_second_10 -16;
+    pos @kc4_first_4 @kc4_second_1 -100;
+    pos @kc4_first_4 @kc4_second_2 -22;
+    pos @kc4_first_4 @kc4_second_3 -89;
+    pos @kc4_first_4 @kc4_second_4 -104;
+    pos @kc4_first_4 @kc4_second_5 -49;
+    pos @kc4_first_4 @kc4_second_6 -89;
+    pos @kc4_first_4 @kc4_second_10 -22;
+    pos @kc4_first_5 @kc4_second_4 -29;
+    pos @kc4_first_5 @kc4_second_7 -12;
+    pos @kc4_first_5 @kc4_second_8 -12;
+    pos @kc4_first_5 @kc4_second_9 -21;
+    pos @kc4_first_6 @kc4_second_1 -54;
+    pos @kc4_first_6 @kc4_second_2 -27;
+    pos @kc4_first_6 @kc4_second_3 -52;
+    pos @kc4_first_6 @kc4_second_4 -47;
+    pos @kc4_first_6 @kc4_second_5 -43;
+    pos @kc4_first_6 @kc4_second_6 -45;
+    pos @kc4_first_6 @kc4_second_10 -20;
+    pos @kc4_first_7 @kc4_second_5 -112;
+    pos @kc4_first_7 @kc4_second_7 -114;
+    pos @kc4_first_7 @kc4_second_8 -51;
+    pos @kc4_first_7 @kc4_second_9 -91;
+    pos @kc4_first_7 @kc4_second_10 -58;
+    pos @kc4_first_7 @kc4_second_11 -109;
+    pos @kc4_first_7 @kc4_second_12 -103;
+    pos @kc4_first_7 @kc4_second_13 -112;
+    pos @kc4_first_7 @kc4_second_14 -106;
+    pos @kc4_first_7 @kc4_second_15 -89;
+    pos @kc4_first_7 @kc4_second_16 -60;
+    pos @kc4_first_7 @kc4_second_17 -89;
+    pos @kc4_first_8 @kc4_second_7 -12;
+    pos @kc4_first_8 @kc4_second_9 -22;
+    pos @kc4_first_8 @kc4_second_12 -8;
+    pos @kc4_first_8 @kc4_second_14 -12;
+    pos @kc4_first_8 @kc4_second_15 -27;
+    pos @kc4_first_9 @kc4_second_5 -33;
+    pos @kc4_first_9 @kc4_second_7 -73;
+    pos @kc4_first_9 @kc4_second_8 -58;
+    pos @kc4_first_9 @kc4_second_9 -133;
+    pos @kc4_first_9 @kc4_second_10 -42;
+    pos @kc4_first_9 @kc4_second_11 -33;
+    pos @kc4_first_9 @kc4_second_12 -87;
+    pos @kc4_first_9 @kc4_second_13 -64;
+    pos @kc4_first_9 @kc4_second_15 -89;
+    pos @kc4_first_9 @kc4_second_16 -75;
+    pos @kc4_first_10 @kc4_second_7 -100;
+    pos @kc4_first_10 @kc4_second_8 -44;
+    pos @kc4_first_10 @kc4_second_9 -87;
+    pos @kc4_first_10 @kc4_second_10 -42;
+    pos @kc4_first_10 @kc4_second_11 -60;
+    pos @kc4_first_10 @kc4_second_12 -100;
+    pos @kc4_first_10 @kc4_second_13 -87;
+    pos @kc4_first_10 @kc4_second_14 -62;
+    pos @kc4_first_10 @kc4_second_15 -78;
+    pos @kc4_first_10 @kc4_second_18 -56;
+    pos @kc4_first_11 @kc4_second_5 -8;
+    pos @kc4_first_11 @kc4_second_7 -11;
+    pos @kc4_first_11 @kc4_second_8 -11;
+    pos @kc4_first_11 @kc4_second_18 -7;
+    pos @kc4_first_12 @kc4_second_5 -13;
+    pos @kc4_first_12 @kc4_second_12 -15;
+    pos @kc4_first_12 @kc4_second_16 -17;
+    pos @kc4_first_13 @kc4_second_6 15;
+    pos @kc4_first_13 @kc4_second_7 -17;
+    pos @kc4_first_13 @kc4_second_8 -17;
+    pos @kc4_first_13 @kc4_second_12 -20;
+    pos @kc4_first_13 @kc4_second_15 -22;
+    pos @kc4_first_14 @kc4_second_12 -16;
+    pos @kc4_first_14 @kc4_second_18 29;
+    pos @kc4_first_15 @kc4_second_5 -11;
+    pos @kc4_first_15 @kc4_second_18 -8;
+    pos @kc4_first_16 @kc4_second_5 -29;
+    pos @kc4_first_17 @kc4_second_6 58;
+    pos @kc4_first_17 @kc4_second_19 53;
+    pos @kc4_first_18 @kc4_second_5 -8;
+    pos @kc4_first_18 @kc4_second_18 -12;
+    pos @kc4_first_19 @kc4_second_9 -75;
+    pos @kc4_first_19 @kc4_second_12 -54;
+    pos @kc4_first_19 @kc4_second_13 -40;
+    pos @kc4_first_20 @kc4_second_1 -97;
+    pos @kc4_first_20 @kc4_second_2 -27;
+    pos @kc4_first_20 @kc4_second_3 -101;
+    pos @kc4_first_20 @kc4_second_4 -107;
+    pos @kc4_first_20 @kc4_second_5 -62;
+    pos @kc4_first_21 @kc4_second_7 -18;
+    pos @kc4_first_21 @kc4_second_12 -20;
+    pos @kc4_first_21 @kc4_second_13 -15;
+    pos @kc4_first_21 @kc4_second_15 -62;
+    pos @kc4_first_21 @kc4_second_18 -8;
+    pos @kc4_first_21 @kc4_second_20 -20;
+    pos @kc4_first_22 @kc4_second_5 -29;
+    pos @kc4_first_22 @kc4_second_18 -15;
+    pos @kc4_first_23 @kc4_second_7 -16;
+    pos @kc4_first_23 @kc4_second_12 -15;
+    pos @kc4_first_23 @kc4_second_13 -9;
+    pos @kc4_first_23 @kc4_second_15 -49;
+    pos @kc4_first_23 @kc4_second_20 -9;
+} kernHorizontalKerninginLatinloo;
+
+feature kern {
+
+  script latn;
+     language dflt ;
+      lookup kernHorizontalKerninginLatinloo;
+} kern;
+
+@GDEF_Simple = [\space \exclam \quotedbl \numbersign \dollar \percent \ampersand 
+	\quotesingle \parenleft \parenright \asterisk \plus \comma \hyphen \period 
+	\slash \zero \one \two \three \four \five \six \seven \eight \nine \colon \semicolon 
+	\less \equal \greater \question \at \A \B \C \D \E \F \G \H \I \J \K \L \M \N \O \P \Q \R \S \T 
+	\U \V \W \X \Y \Z \bracketleft \backslash \bracketright \asciicircum \underscore 
+	\grave \a \b \c \d \e \f \g \h \i \j \k \l \m \n \o \p \q \r \s \t \u \v \w \x \y \z \braceleft \bar 
+	\braceright \asciitilde \uni00A0 \exclamdown \cent \sterling \currency \yen 
+	\brokenbar \section \dieresis \copyright \ordfeminine \guillemotleft 
+	\logicalnot \uni00AD \registered \macron \degree \plusminus \twosuperior 
+	\threesuperior \acute \mu \paragraph \periodcentered \cedilla \onesuperior 
+	\ordmasculine \guillemotright \onequarter \onehalf \threequarters 
+	\questiondown \Agrave \Aacute \Acircumflex \Atilde \Adieresis \Aring \AE 
+	\Ccedilla \Egrave \Eacute \Ecircumflex \Edieresis \Igrave \Iacute \Icircumflex 
+	\Idieresis \Eth \Ntilde \Ograve \Oacute \Ocircumflex \Otilde \Odieresis 
+	\multiply \Oslash \Ugrave \Uacute \Ucircumflex \Udieresis \Yacute \Thorn 
+	\germandbls \agrave \aacute \acircumflex \atilde \adieresis \aring \ae \ccedilla 
+	\egrave \eacute \ecircumflex \edieresis \igrave \iacute \icircumflex \idieresis 
+	\eth \ntilde \ograve \oacute \ocircumflex \otilde \odieresis \divide \oslash 
+	\ugrave \uacute \ucircumflex \udieresis \yacute \thorn \ydieresis \Amacron 
+	\amacron \Abreve \abreve \Aogonek \aogonek \Cacute \cacute \Ccircumflex 
+	\ccircumflex \Cdotaccent \cdotaccent \Ccaron \ccaron \Dcaron \dcaron \Dcroat 
+	\dcroat \Emacron \emacron \Ebreve \ebreve \Edotaccent \edotaccent \Eogonek 
+	\eogonek \Ecaron \ecaron \Gcircumflex \gcircumflex \Gbreve \gbreve \Gdotaccent 
+	\gdotaccent \Gcommaaccent \gcommaaccent \Hcircumflex \hcircumflex \Hbar \hbar 
+	\Itilde \itilde \Imacron \imacron \Ibreve \ibreve \Iogonek \iogonek \Idotaccent 
+	\dotlessi \IJ \ij \Jcircumflex \jcircumflex \Kcommaaccent \kcommaaccent 
+	\kgreenlandic \Lacute \lacute \Lcommaaccent \lcommaaccent \Lcaron \lcaron \Ldot 
+	\ldot \Lslash \lslash \Nacute \nacute \Ncommaaccent \ncommaaccent \Ncaron 
+	\ncaron \napostrophe \Eng \eng \Omacron \omacron \Obreve \obreve \Ohungarumlaut 
+	\ohungarumlaut \OE \oe \Racute \racute \Rcommaaccent \rcommaaccent \Rcaron 
+	\rcaron \Sacute \sacute \Scircumflex \scircumflex \Scedilla \scedilla \Scaron 
+	\scaron \uni0162 \uni0163 \Tcaron \tcaron \Tbar \tbar \Utilde \utilde \Umacron 
+	\umacron \Ubreve \ubreve \Uring \uring \Uhungarumlaut \uhungarumlaut \Uogonek 
+	\uogonek \Wcircumflex \wcircumflex \Ycircumflex \ycircumflex \Ydieresis 
+	\Zacute \zacute \Zdotaccent \zdotaccent \Zcaron \zcaron \longs \florin 
+	\Scommaaccent \scommaaccent \uni021A \uni021B \circumflex \caron \breve 
+	\dotaccent \ring \ogonek \tilde \hungarumlaut \pi \endash \emdash \quoteleft 
+	\quoteright \quotesinglbase \quotedblleft \quotedblright \quotedblbase 
+	\dagger \daggerdbl \bullet \ellipsis \perthousand \guilsinglleft 
+	\guilsinglright \fraction \Euro \trademark \partialdiff \increment \product 
+	\summation \minus \radical \infinity \integral \notequal \lozenge ];
+@GDEF_Ligature = [\fi \fl ];
+
+table GDEF {
+  GlyphClassDef @GDEF_Simple, @GDEF_Ligature, , ;
+
+} GDEF;
+

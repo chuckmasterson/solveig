@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="dotlessi" format="1">
+  <advance width="232"/>
+  <unicode hex="0131"/>
+  <outline>
+    <contour>
+      <point x="51" y="-1" type="curve"/>
+      <point x="62" y="94"/>
+      <point x="61" y="307"/>
+      <point x="50" y="391" type="curve"/>
+      <point x="80" y="391"/>
+      <point x="144" y="398"/>
+      <point x="174" y="407" type="curve"/>
+      <point x="164" y="341"/>
+      <point x="168" y="77"/>
+      <point x="182" y="-2" type="curve"/>
+      <point x="146" y="5"/>
+      <point x="80" y="3"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.fontlab.hintData</key>
+      <dict>
+	<key>hhints</key>
+	<array>
+	  <dict>
+	    <key>position</key>	    <integer>-14</integer>
+	    <key>width</key>	    <integer>21</integer>
+	  </dict>
+	  <dict>
+	    <key>position</key>	    <integer>387</integer>
+	    <key>width</key>	    <integer>20</integer>
+	  </dict>
+	</array>
+      </dict>
+    </dict>
+  </lib>
+</glyph>

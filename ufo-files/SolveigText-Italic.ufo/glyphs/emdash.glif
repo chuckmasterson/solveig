@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="emdash" format="1">
+  <advance width="595"/>
+  <unicode hex="2014"/>
+  <outline>
+    <contour>
+      <point x="30" y="271" type="curve"/>
+      <point x="256" y="269"/>
+      <point x="349" y="269"/>
+      <point x="573" y="270" type="curve"/>
+      <point x="574" y="259"/>
+      <point x="573" y="241"/>
+      <point x="568" y="231" type="curve"/>
+      <point x="342" y="232"/>
+      <point x="251" y="234"/>
+      <point x="27" y="233" type="curve"/>
+      <point x="23" y="241"/>
+      <point x="27" y="266"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.fontlab.hintData</key>
+      <dict>
+	<key>hhints</key>
+	<array>
+	  <dict>
+	    <key>position</key>	    <integer>231</integer>
+	    <key>width</key>	    <integer>40</integer>
+	  </dict>
+	</array>
+      </dict>
+    </dict>
+  </lib>
+</glyph>

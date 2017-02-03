@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="Icircumflex" format="1">
+  <advance width="261"/>
+  <unicode hex="00CE"/>
+  <outline>
+    <contour>
+      <point x="258" y="583" type="curve"/>
+      <point x="216" y="465"/>
+      <point x="164" y="100"/>
+      <point x="162" y="-2" type="curve"/>
+      <point x="145" y="-1"/>
+      <point x="51" y="1"/>
+      <point x="29" y="-2" type="curve"/>
+      <point x="60" y="138"/>
+      <point x="115" y="414"/>
+      <point x="120" y="583" type="curve"/>
+      <point x="146" y="580"/>
+      <point x="233" y="579"/>
+    </contour>
+    <contour>
+      <point x="91" y="632" type="curve"/>
+      <point x="88" y="635"/>
+      <point x="81" y="654"/>
+      <point x="81" y="664" type="curve"/>
+      <point x="118" y="682"/>
+      <point x="167" y="714"/>
+      <point x="218" y="750" type="curve"/>
+      <point x="245" y="721"/>
+      <point x="283" y="687"/>
+      <point x="315" y="663" type="curve"/>
+      <point x="312" y="656"/>
+      <point x="305" y="638"/>
+      <point x="299" y="633" type="curve"/>
+      <point x="268" y="645"/>
+      <point x="233" y="656"/>
+      <point x="202" y="662" type="curve"/>
+      <point x="167" y="656"/>
+      <point x="135" y="646"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.fontlab.hintData</key>
+      <dict>
+	<key>hhints</key>
+	<array>
+	  <dict>
+	    <key>position</key>	    <integer>-14</integer>
+	    <key>width</key>	    <integer>21</integer>
+	  </dict>
+	  <dict>
+	    <key>position</key>	    <integer>563</integer>
+	    <key>width</key>	    <integer>20</integer>
+	  </dict>
+	  <dict>
+	    <key>position</key>	    <integer>620</integer>
+	    <key>width</key>	    <integer>21</integer>
+	  </dict>
+	  <dict>
+	    <key>position</key>	    <integer>723</integer>
+	    <key>width</key>	    <integer>20</integer>
+	  </dict>
+	</array>
+      </dict>
+    </dict>
+  </lib>
+</glyph>
