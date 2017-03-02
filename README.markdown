@@ -11,6 +11,9 @@ Solveig is named after Edvard Grieg’s “Solveig’s Song,” a quiet piece of
 concentrated, chilled emotion that accompanied me through the entire design
 process.
 
+For more information, see the font's [page at the Looseleaf Fonts
+site](http://looseleaf.chuckmasterson.com/solveig).
+
 ## Installing
 
 Download the ZIP of all the files:
